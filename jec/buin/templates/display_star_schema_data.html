@@ -1,0 +1,33 @@
+<!-- buin/templates/display_star_schema_data.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Schema Visualization</title>
+</head>
+<body>
+    <h1>Star Schema Visualization</h1>
+
+    <!-- Menampilkan plot pertama -->
+    <div style="text-align:center; margin-bottom: 20px;">
+        <h2>Star Schema Plot 1: Depression Level by University</h2>
+        <img src="{{ plot_path_1 }}" alt="Star Schema Plot 1">
+    </div>
+
+    <!-- Menampilkan plot kedua -->
+    <div style="text-align:center; margin-bottom: 20px;">
+        <h2>Star Schema Plot 2: Study Satisfaction vs Academic Workload</h2>
+        <img src="{{ plot_path_2 }}" alt="Star Schema Plot 2">
+    </div>
+
+    <!-- Menampilkan plot ketiga -->
+    <div style="text-align:center;">
+        <h2>Star Schema Plot 3: Age vs University</h2>
+        <img src="{{ plot_path_3 }}" alt="Star Schema Plot 3">
+    </div>
+
+</body>
+</html>
